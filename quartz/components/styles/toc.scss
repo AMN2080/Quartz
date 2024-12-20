@@ -3,10 +3,6 @@
 .toc {
   display: flex;
   flex-direction: column;
-
-  &.desktop-only {
-    max-height: 40%;
-  }
 }
 
 @media all and not ($mobile) {
@@ -45,7 +41,7 @@ button#toc {
 #toc-content {
   list-style: none;
   overflow: hidden;
-  overflow-y: auto;
+  // overflow-y: auto;
   max-height: 100%;
   transition:
     max-height 0.35s ease,
