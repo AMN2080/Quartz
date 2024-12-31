@@ -1,6 +1,27 @@
 @use "./base.scss";
 @use "./variables.scss";
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #b4b4b4;
+    border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #6d6d6d;
+    border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #5f5f5f; 
+}
+
 // put your custom CSS here!
 .breadcrumb-element p {
 	margin: 0 .5rem 0 0;
@@ -34,17 +55,18 @@ button#explorer .fold {
 }
 
 .explorer {
-    border:1px solid var(--gray);
-    border-radius:5px;
-    padding:10px;
-    font-size:1rem;
+    // border: 1px solid var(--gray);
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
 }
 
 .toc {
-    border:1px solid var(--gray);
-    border-radius:5px;
-    padding:10px;
-    font-size:1rem;
+    // border: 1px solid var(--gray);
+    border-radius: 5px;
+    padding: 10px 10px 20px 10px;
+    font-size: 1rem;
+    max-height: 200px;
 }
 
 #toc-content .depth-0 {

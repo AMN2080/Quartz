@@ -193,7 +193,7 @@ a {
       grid-area: grid-sidebar-left;
       flex-direction: column;
       @media all and ($mobile) {
-        gap: 0;
+        gap: 10;
         align-items: center;
         position: initial;
         display: flex;
@@ -252,8 +252,8 @@ a {
     & footer {
       max-width: 100%;
       min-width: 100%;
-      margin-left: auto;
       margin-right: auto;
+      margin-left: auto;
       @media all and ($tablet) {
         margin-right: 0;
       }
@@ -531,10 +531,6 @@ audio,
 video {
   width: 100%;
   border-radius: 5px;
-}
-
-.spacer {
-  flex: 1 1 auto;
 }
 
 div:has(> .overflow) {
